@@ -1,0 +1,22 @@
+package com.bta.security;
+
+import com.bta.model.UserAccount;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
+
+@Component
+public class UserAccountMapper {
+
+    public UserDetails toUserDetails(UserAccount userAccount){
+       return CustomUserDetails.builder()
+               .username(userAccount.getUsername())
+               .password(userAccount.getPassword())
+               .accountNonLocked(userAccount.isActive())
+               .credentialsNonExpired(true)
+               .accountNonExpired(userAccount.isActive())
+               .authorities(null)
+               .enabled(userAccount.isActive())
+               .build();
+    }
+}

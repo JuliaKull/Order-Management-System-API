@@ -1,0 +1,51 @@
+{
+  "customerOrders": [
+    {
+      "customer": {
+        "email": "super@Customer.net"
+      },
+      "orderLines": [
+        {
+          "product": {
+            "name": "Iphone",
+            "skuCode": 8547,
+            "unitPrice": 700
+          },
+          "quantity": 4
+        },
+        {
+          "product": {
+            "name": "Xiaomi",
+            "skuCode": 5578,
+            "unitPrice": 300
+          },
+          "quantity": 40
+        }
+      ]
+    },
+
+    {
+      "customer": {
+        "email": "not-super@Customer.net"
+      },
+      "orderLines": [
+        {
+          "product": {
+            "name": "coronaVac",
+            "skuCode": 8454,
+            "unitPrice": 10
+          },
+          "quantity":8000
+        },
+        {
+          "product": {
+            "name": "moderna",
+            "skuCode": 8541,
+            "unitPrice": 30
+          },
+          "quantity": 10000
+        }
+      ]
+    }
+  ]
+}

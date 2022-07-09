@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/postgres
+    username: postgres
+    password: qwer778899
+  jpa:
+    show-sql: false
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: jk7102777@gmail.com
+    password:
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+          starttls.enable: true
+
+logging:
+  level:
+    root: INFO
+server:
+  port: 8081
+
